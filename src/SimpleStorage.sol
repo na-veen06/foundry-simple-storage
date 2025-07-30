@@ -4,6 +4,7 @@ pragma solidity 0.8.19;
 contract Simplestorage {
     uint256 public myFavnumber;
     // uint256[] listoffavnums;
+
     struct person {
         uint256 favnum;
         string name;
@@ -14,7 +15,7 @@ contract Simplestorage {
 
     mapping(string => uint256) public favnums;
 
-    function store(uint fav_number) public virtual {
+    function store(uint256 fav_number) public virtual {
         myFavnumber = fav_number;
     }
 
